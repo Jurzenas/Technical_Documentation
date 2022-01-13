@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto&family=Ubuntu:ital,wght@1,400;1,500;1,700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Lato", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
+  background-color: rgb(227, 224, 224);
+  color: rgb(14, 14, 14);
+}
+
+p {
+  line-height: 40px;
+}
+#main-doc {
+  display: flex;
+  flex-direction: column;
+}
+/* ----- Main content -----  */
+
+.content {
+  margin: 0 20px 20px;
+}
+.content p a:hover {
+  color: rgb(30, 138, 30);
+}
+
+.main-section {
+  min-height: 100vh;
+  width: 100%;
+  border-bottom: 2px dashed rgb(139, 79, 164);
+}
+
+.main-section header {
+  color: black;
+  font-size: 30px;
+  padding-top: 30px;
+}
+
+.main-section ul li,
+.main-section ol li {
+  margin-bottom: 15px;
+}
+
+button {
+  background: rgb(183, 153, 196);
+  color: black;
+  border: none;
+  padding: 0.3rem 1.1rem;
+  font-size: 1rem;
+  border-radius: 15px;
+  margin-bottom: 2px;
+}
+button:hover {
+  background: rgb(191, 182, 182);
+}
+
+/* ----- Navbar ----- */
+#navbar {
+  width: 100%;
+  width: 100%;
+  background-color: #ccc;
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+}
+
+#navbar header {
+  color: #000;
+  font-size: 35px;
+}
+#navbar ul {
+  padding: 0;
+  font-size: 25px;
+}
+
+#navbar ul li {
+  margin-bottom: 15px;
+  list-style: none;
+  width: 100%;
+}
+
+#navbar ul li a {
+  height: 30px;
+}
+
+#navbar ul li a:hover {
+  color: rgb(30, 138, 30);
+}
+/* ----- Media query ----- */
+
+@media (min-width: 900px) {
+  #main-doc {
+    flex-direction: row;
+  }
+  #navbar {
+    width: 300px;
+    height: 100vw;
+    background-color: #ccc;
+    margin-top: 0;
+    text-align: left;
+    position: fixed;
+    padding: 0;
+  }
+  .divider {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+    min-height: 90px;
+    background-color: #6d4d86;
+  }
+
+  #navbar ul li {
+    padding-top: 15px;
+  }
+
+  .content {
+    margin-left: 350px;
+  }
+}
